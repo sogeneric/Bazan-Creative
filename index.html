@@ -678,6 +678,46 @@
     z-index: 1;
   }
   .svc:hover .svc-overlay { opacity: 1; }
+  /* ───────── MOBILE ───────── */
+  @media (max-width: 768px) {
+    /* Nav: stack into logo row + wrapping links, hide social to save space */
+    nav {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1rem;
+      text-align: center;
+    }
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem 1.1rem;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-links a { font-size: 1.05rem; letter-spacing: 0.08em; }
+    .social-icons { gap: 1.1rem; }
+
+    /* Hero: scale down the giant background type so it doesn't force overflow */
+    .hero { min-height: 88vh; padding-bottom: 2rem; }
+    .hero-bg-type, .hero-red-word { font-size: 26vw; }
+    .hero-content { padding: 0 1.25rem; }
+
+    /* Services: single column, shorter cards, smaller display type */
+    .services-section { padding: 28px 4px 4px; }
+    .services-grid { grid-template-columns: 1fr; gap: 4px; padding: 4px; }
+    .svc { min-height: 280px; padding: 2rem 1.5rem; }
+    .svc-header { flex-wrap: wrap; gap: 0.2em 0.35em; }
+    .svc-num, .svc-dash, .svc-name { font-size: 3rem; }
+    .svc-script { font-size: 2.4rem; bottom: 82%; }
+    .svc-desc { font-size: 0.8rem; line-height: 1.6; }
+
+    /* Work collage min-heights down a touch */
+    .wc-1 .wc-img { min-height: 280px; }
+    .wc-2 .wc-img, .wc-3 .wc-img { min-height: 190px; }
+    .wc-4 .wc-img, .wc-5 .wc-img { min-height: 170px; }
+  }
+
   .svc-num, .svc-name, .svc-desc, .svc-arrow {
     position: relative; z-index: 2;
   }
@@ -739,6 +779,8 @@
   .footer-copy-mark { font-family: 'DM Sans', sans-serif; font-size: 1.1rem; color: rgba(255,255,255,0.6); }
   .footer-logo-img { height: 28px; width: auto; display: block; opacity: 0.9; }
   .footer-year { font-family: 'DM Sans', sans-serif; font-size: 1.1rem; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }
+
+  @media (max-width: 768px) { .contact-script { font-size: 2.5rem !important; } }
 </style>
 </head>
 <body>
