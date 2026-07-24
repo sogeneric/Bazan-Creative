@@ -8,12 +8,13 @@
   <meta property="og:description" content="Emmy-nominated editor Jimmy Bazan's television work — reality, scripted, and documentary.">
   <meta property="og:url" content="https://bazancreative.com/bazancreative_television.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://bazancreative.com/bazan_share_thumb.jpg">
+  <meta property="og:image" content="https://bazancreative.com/bazan_share_thumb.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://bazancreative.com/bazan_share_thumb.jpg">
+  <meta name="twitter:image" content="https://bazancreative.com/bazan_share_thumb.webp">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
@@ -197,6 +198,10 @@
   .footer-copy-mark { font-family: 'DM Sans', sans-serif; font-size: 1.1rem; color: rgba(255,255,255,0.6); }
   .footer-logo-img { height: 28px; width: auto; display: block; opacity: 0.9; }
   .footer-year { font-family: 'DM Sans', sans-serif; font-size: 1.1rem; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }
+  /* --- Reduced motion: freeze continuous auto-animation for users who ask for it --- */
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; }
+  }
 </style>
 </head>
 <body>
@@ -248,53 +253,53 @@
 <!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-track">
-    <div class="ticker-logo"><img src="nbcwhite.png" alt="NBC"></div>
+    <div class="ticker-logo"><img src="nbcwhite.webp" alt="NBC"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="Netflix-Logo-1536x864.png" alt="Netflix"></div>
+    <div class="ticker-logo"><img src="Netflix-Logo-1536x864.webp" alt="Netflix"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="mtvlogo.png" alt="MTV"></div>
+    <div class="ticker-logo"><img src="mtvlogo.webp" alt="MTV"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="bravologowhite.png" alt="Bravo"></div>
+    <div class="ticker-logo"><img src="bravologowhite.webp" alt="Bravo"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="CBS-Logo-white.png" alt="CBS"></div>
+    <div class="ticker-logo"><img src="CBS-Logo-white.webp" alt="CBS"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="Disney-Plus-Logo-1536x864.png" alt="Disney+"></div>
+    <div class="ticker-logo"><img src="Disney-Plus-Logo-1536x864.webp" alt="Disney+"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="CNN-logo-1536x864.png" alt="CNN"></div>
+    <div class="ticker-logo"><img src="CNN-logo-1536x864.webp" alt="CNN"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="paramount plus.png" alt="Paramount+"></div>
+    <div class="ticker-logo"><img src="paramount plus.webp" alt="Paramount+"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="Peacock-Logo-1536x864.png" alt="Peacock"></div>
+    <div class="ticker-logo"><img src="Peacock-Logo-1536x864.webp" alt="Peacock"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="Roku-Logo-1536x864.png" alt="Roku"></div>
+    <div class="ticker-logo"><img src="Roku-Logo-1536x864.webp" alt="Roku"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="foxwhite.png" alt="FOX"></div>
+    <div class="ticker-logo"><img src="foxwhite.webp" alt="FOX"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="usalogo.png" alt="USA"></div>
+    <div class="ticker-logo"><img src="usalogo.webp" alt="USA"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="nbcwhite.png" alt="NBC"></div>
+    <div class="ticker-logo"><img src="nbcwhite.webp" alt="NBC"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="Netflix-Logo-1536x864.png" alt="Netflix"></div>
+    <div class="ticker-logo"><img src="Netflix-Logo-1536x864.webp" alt="Netflix"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="mtvlogo.png" alt="MTV"></div>
+    <div class="ticker-logo"><img src="mtvlogo.webp" alt="MTV"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="bravologowhite.png" alt="Bravo"></div>
+    <div class="ticker-logo"><img src="bravologowhite.webp" alt="Bravo"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="CBS-Logo-white.png" alt="CBS"></div>
+    <div class="ticker-logo"><img src="CBS-Logo-white.webp" alt="CBS"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="Disney-Plus-Logo-1536x864.png" alt="Disney+"></div>
+    <div class="ticker-logo"><img src="Disney-Plus-Logo-1536x864.webp" alt="Disney+"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="CNN-logo-1536x864.png" alt="CNN"></div>
+    <div class="ticker-logo"><img src="CNN-logo-1536x864.webp" alt="CNN"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="paramount plus.png" alt="Paramount+"></div>
+    <div class="ticker-logo"><img src="paramount plus.webp" alt="Paramount+"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="Peacock-Logo-1536x864.png" alt="Peacock"></div>
+    <div class="ticker-logo"><img src="Peacock-Logo-1536x864.webp" alt="Peacock"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="Roku-Logo-1536x864.png" alt="Roku"></div>
+    <div class="ticker-logo"><img src="Roku-Logo-1536x864.webp" alt="Roku"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="foxwhite.png" alt="FOX"></div>
+    <div class="ticker-logo"><img src="foxwhite.webp" alt="FOX"></div>
     <span class="ticker-dot">◆</span>
-    <div class="ticker-logo"><img src="usalogo.png" alt="USA"></div>
+    <div class="ticker-logo"><img src="usalogo.webp" alt="USA"></div>
     <span class="ticker-dot">◆</span>
   </div>
 </div>
@@ -501,6 +506,27 @@
     <span class="footer-year">2026</span>
   </div>
 </footer>
+
+<!-- MOTION: smooth scroll (Lenis) + scroll animation (GSAP) -->
+<script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.Lenis || !window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+  var lenis = new Lenis({ autoRaf: false, anchors: true });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+  gsap.ticker.lagSmoothing(0);
+  gsap.fromTo('.video-hero-wrap', { autoAlpha: 0, scale: 1.06 }, { autoAlpha: 1, scale: 1, duration: 1.3, ease: 'power2.out' });
+  gsap.from('.ticker-wrap', { autoAlpha: 0, duration: 0.9, ease: 'power1.out', scrollTrigger: { trigger: '.ticker-wrap', start: 'top 92%' } });
+  gsap.utils.toArray('.show-card').forEach(function (el) {
+    gsap.from(el, { autoAlpha: 0, y: 40, duration: 0.75, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 88%' } });
+  });
+})();
+</script>
 
 </body>
 </html>
